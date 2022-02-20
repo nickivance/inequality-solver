@@ -1,0 +1,9 @@
+(declare-const c Int)
+(declare-const b Int)
+(declare-const a Int)
+(assert (< c a))
+(assert (< b c))
+(assert (< a b))
+
+(check-sat)
+(get-model)
